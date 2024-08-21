@@ -1,0 +1,65 @@
+// Type your program in here!
+
+//1.
+
+function biggie_size(combo) {
+    return combo > 0 && combo < 5
+    ? combo + 4 
+    : "Invalid Option Entered";
+}
+
+//2.
+
+function unbiggie_size(combo) {
+    return combo > 4 && combo < 9
+    ? combo - 4 
+    : "Invalid Option Entered";
+}
+
+//3.
+
+function is_biggie_size(combo){
+    return combo > 4 && combo < 9 ;
+}
+
+//4.
+
+function combo_price(combo){
+    return combo > 0 && combo < 9 
+    ? combo < 5 
+    ? combo * 1.17 
+    : (combo - 4) * 1.17 + 0.50 
+    : "Invalid Option Entered";
+}
+
+//5.
+
+function empty_order(){
+    return 0;
+}
+
+//6.
+
+function add_to_order(old_order, new_order){
+    return old_order * math_pow(10, (math_floor(math_log10(new_order))) + 1) + new_order;
+}
+
+//7.
+
+function last_combo(order){
+    return (parse_int(order, 10)) % 10 ; 
+}
+
+//8.
+
+function other_combos(order){
+    return math_floor(parse_int(order, 10) / 10) ;
+}
+
+
+
+
+
+
+
+
